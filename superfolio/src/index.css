@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@theme {
+  --color-background: #0B0F16;
+  --color-surface: #141A24;
+  --color-foreground: #F2F0EA;
+  --color-mist: #9AA3AF;
+  --color-amber: #E2A63B;
+  --color-moss: #4FAE82;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+body {
+  background-color: var(--color-background);
+  color-scheme: dark;
+}
