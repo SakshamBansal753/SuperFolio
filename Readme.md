@@ -1,4 +1,7 @@
-# JobPilot AI
+
+<h1 align="center">
+    JobPilot AI
+</h1> 
 
 An AI-powered job search workspace — a Kanban board for tracking applications, with Gmail integration, AI resume matching, cover letter generation, and interview prep, all in one place.
 
