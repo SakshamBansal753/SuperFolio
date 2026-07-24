@@ -128,7 +128,7 @@ npm run dev
 
 - [x] Auth (Clerk sign-in/sign-up)
 - [x] `board_columns` — customizable Kanban columns, seeded with defaults on first visit
-- [ ] `applications` — the actual cards
+- [x] `applications` — the actual cards
 - [ ] Drag-and-drop (cards between/within columns, columns reordering)
 - [ ] Gmail integration — auto-create/move cards from recruiter emails
 - [ ] AI resume matching
