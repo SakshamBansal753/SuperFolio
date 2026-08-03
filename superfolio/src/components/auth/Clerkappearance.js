@@ -2,7 +2,7 @@ export const clerkAppearance = {
   variables: {
     colorPrimary: "#3B82F6",
     colorBackground: "#141A24",
-    colorText: "#F8FAFC",
+    colorText: "#FFFFFF",
     colorTextSecondary: "#94A3B8",
 
     colorInputBackground: "#1E293B",
@@ -18,6 +18,7 @@ export const clerkAppearance = {
   },
 
   elements: {
+
     card: `
       bg-[#141A24]
       border border-white/10
@@ -34,7 +35,7 @@ export const clerkAppearance = {
       "font-display text-3xl text-white font-semibold",
 
     headerSubtitle:
-      "text-slate-400 font-body",
+      "text-white font-body",
 
     socialButtonsBlockButton: `
       bg-[#1E293B]
@@ -53,10 +54,10 @@ export const clerkAppearance = {
     dividerLine: "bg-slate-700",
 
     dividerText:
-      "text-slate-400 font-mono uppercase text-xs tracking-widest",
+      "text-white font-mono uppercase text-xs tracking-widest",
 
     formFieldLabel:
-      "text-slate-300 font-medium",
+      "text-white font-medium",
 
     formFieldInput: `
       bg-[#1E293B]
@@ -81,7 +82,7 @@ export const clerkAppearance = {
     `,
 
     footerActionText:
-      "text-slate-400",
+      "text-white",
 
     footerActionLink:
       "text-blue-400 hover:text-blue-300",
@@ -121,4 +122,27 @@ export const clerkAppearance = {
     header:
       "bg-transparent",
   },
+  variables: {
+  colorPrimary: "#3B82F6",
+
+  colorBackground: "#141A24",
+
+  // All text white
+  colorText: "#FFFFFF",
+  colorTextOnPrimaryBackground: "#FFFFFF",
+  colorTextSecondary: "#FFFFFF",
+  colorTextDisabled: "#FFFFFF",
+
+  // Inputs
+  colorInputBackground: "#1E293B",
+  colorInputText: "#FFFFFF",
+
+  // Status colors
+  colorSuccess: "#22C55E",
+  colorDanger: "#EF4444",
+  colorWarning: "#F59E0B",
+
+  borderRadius: "12px",
+  fontFamily: "Inter, sans-serif",
+}
 };

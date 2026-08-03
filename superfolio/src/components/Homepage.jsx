@@ -14,7 +14,7 @@ const INTERVIEW = {
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background font-body text-foreground">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-900 to-black font-body text-foreground">
       <style>{`
         @keyframes jp-fade-up {
           from { opacity: 0; transform: translateY(8px); }

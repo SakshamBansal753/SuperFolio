@@ -16,7 +16,16 @@
 }
 
 body {
-  background-color: var(--color-background);
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,   /* Slate blue */
+    #0b1120 35%,  /* Dark navy */
+    #050816 70%,  /* Almost black */
+    #000000 100%  /* Black */
+  );
+
+  color: var(--color-foreground);
   color-scheme: dark;
 }
 /* Firefox */
