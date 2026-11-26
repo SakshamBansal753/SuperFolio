@@ -1,4 +1,7 @@
-# JobPilot AI — Intelligent Job Search & Application Workspace
+
+<h1 align="center">
+    JobPilot AI
+</h1> 
 
 JobPilot AI is a modern, full-screen job application tracking workspace that connects directly to your inbox. It parses incoming recruiter emails with high-speed Groq AI reasoning, automatically advances cards across your Kanban pipeline (*Applied*, *Screening*, *Interview*, *Offer*, *Rejected*), and provides one-click deep links directly into Gmail.
 
@@ -281,5 +284,14 @@ Developed by **Saksham Bansal** ([@SakshamBansal753](https://github.com/SakshamB
 
 ---
 
-## 📄 License
-MIT License. Built for modern, focused job hunters.
+## Roadmap
+
+- [x] Auth (Clerk sign-in/sign-up)
+- [x] `board_columns` — customizable Kanban columns, seeded with defaults on first visit
+- [x] `applications` — the actual cards
+- [ ] Drag-and-drop (cards between/within columns, columns reordering)
+- [ ] Gmail integration — auto-create/move cards from recruiter emails
+- [ ] AI resume matching
+- [ ] AI cover letter generation
+- [ ] Interview prep tools
+- [ ] Application analytics
