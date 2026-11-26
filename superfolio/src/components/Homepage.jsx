@@ -199,15 +199,15 @@ export default function HomePage() {
         <div className="grid items-center gap-16 lg:grid-cols-[1.1fr_1fr] lg:gap-12">
           {/* Copy column */}
           <div className="flex flex-col items-start">
-            <span className="inline-block rounded-full bg-amber-100 px-3 py-1 font-mono text-[11px] font-medium uppercase tracking-[0.15em] text-amber-800">
-              Smart Application Workspace
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-neutral-400">
+              SMART APPLICATION WORKSPACE
             </span>
-            <h1 className="mt-5 max-w-xl font-display text-4xl leading-[1.15] text-slate-900 sm:text-5xl">
-              Stop tracking your job search in a spreadsheet.
+            <h1 className="mt-4 max-w-xl text-4xl font-bold tracking-[-0.035em] leading-[1.12] text-slate-950 sm:text-5xl lg:text-[56px]">
+              Everything you need to bring your <span className="font-serif italic font-normal text-slate-900">ideas</span> to life.
             </h1>
-            <p className="mt-5 max-w-md text-base leading-relaxed text-slate-600">
-              JobPilot ingests your recruiter emails, classifies them with Groq AI, and automatically
-              updates your full-screen Kanban board the moment a company replies.
+            <p className="mt-5 max-w-md text-base leading-relaxed text-slate-600 font-normal">
+              Stop tracking your job search in a spreadsheet. JobPilot reads your recruiter emails,
+              classifies stages with Groq AI, and automatically updates your board the moment companies reply.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
@@ -293,11 +293,11 @@ export default function HomePage() {
         {/* How it works */}
         <section className="mt-28 border-t border-slate-200 pt-16">
           <div className="text-center">
-            <span className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
-              Simple Workflow
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-neutral-400">
+              SIMPLE WORKFLOW
             </span>
-            <h2 className="mt-2 font-display text-3xl font-medium text-slate-900">
-              How JobPilot works in 3 steps
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-slate-950">
+              How JobPilot works in three <span className="font-serif italic font-normal text-slate-800">simple</span> steps.
             </h2>
           </div>
 
@@ -323,11 +323,11 @@ export default function HomePage() {
         {/* Core Features Grid (No Emojis, Clean SVGs) */}
         <section className="mt-28 border-t border-slate-200 pt-16">
           <div className="max-w-xl">
-            <span className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
-              Features
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-neutral-400">
+              CORE FEATURES
             </span>
-            <h2 className="mt-2 font-display text-3xl font-medium text-slate-900">
-              Everything built for a stress-free job hunt
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-slate-950">
+              Everything built for a <span className="font-serif italic font-normal text-slate-800">stress-free</span> job hunt.
             </h2>
             <p className="mt-3 text-sm text-slate-600">
               No bloated AI gimmicks, no complex setup. Just a fast, quiet workspace that works with your email.
@@ -340,10 +340,10 @@ export default function HomePage() {
                 key={feat.title}
                 className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xs transition-shadow hover:shadow-sm"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 border border-amber-200/60">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100/80 border border-slate-200/60">
                   <FeatureIcon type={feat.type} />
                 </div>
-                <h3 className="mt-4 font-display text-lg font-semibold text-slate-900">
+                <h3 className="mt-4 text-base font-semibold text-slate-900">
                   {feat.title}
                 </h3>
                 <p className="mt-2 text-xs leading-relaxed text-slate-600">
@@ -357,11 +357,11 @@ export default function HomePage() {
         {/* Comparison Section */}
         <section className="mt-28 border-t border-slate-200 pt-16">
           <div className="text-center">
-            <span className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
-              Why Switch
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-neutral-400">
+              WHY SWITCH
             </span>
-            <h2 className="mt-2 font-display text-3xl font-medium text-slate-900">
-              Manual spreadsheets vs. JobPilot
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-slate-950">
+              Manual spreadsheets vs. <span className="font-serif italic font-normal text-slate-800">JobPilot</span>.
             </h2>
           </div>
 
@@ -386,11 +386,11 @@ export default function HomePage() {
         {/* Developer Spotlight Section */}
         <section className="mt-28 border-t border-slate-200 pt-16">
           <div className="text-center">
-            <span className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
-              Creator Spotlight
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-neutral-400">
+              CREATOR SPOTLIGHT
             </span>
-            <h2 className="mt-2 font-display text-3xl font-medium text-slate-900">
-              Built by Saksham Bansal
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-slate-950">
+              Built by <span className="font-serif italic font-normal text-slate-800">Saksham Bansal</span>.
             </h2>
           </div>
 
@@ -404,7 +404,7 @@ export default function HomePage() {
               <div className="flex-1 text-center sm:text-left">
                 <div className="flex flex-wrap items-center justify-center sm:justify-between gap-2">
                   <div>
-                    <h3 className="font-display text-2xl font-semibold text-slate-900">
+                    <h3 className="text-2xl font-bold tracking-tight text-slate-950">
                       Saksham Bansal
                     </h3>
                     <p className="font-mono text-xs text-amber-700">@SakshamBansal753</p>
@@ -426,7 +426,7 @@ export default function HomePage() {
                   </a>
                 </div>
 
-                <p className="mt-3 text-sm text-slate-600 leading-relaxed">
+                <p className="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
                   Passionate about clean code, beautiful UI, and building cool developer tools. Turning curiosity into code with 46+ open-source repositories and 1000+ algorithmic solutions solved.
                 </p>
 
@@ -483,11 +483,11 @@ export default function HomePage() {
         {/* FAQ Section */}
         <section className="mt-28 border-t border-slate-200 pt-16">
           <div className="text-center">
-            <span className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">
-              FAQ
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-neutral-400">
+              FREQUENTLY ASKED QUESTIONS
             </span>
-            <h2 className="mt-2 font-display text-3xl font-medium text-slate-900">
-              Frequently asked questions
+            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-slate-950">
+              Clear answers to <span className="font-serif italic font-normal text-slate-800">common</span> questions.
             </h2>
           </div>
 
@@ -501,7 +501,7 @@ export default function HomePage() {
                 >
                   <button
                     onClick={() => setOpenFaq(isOpen ? null : i)}
-                    className="flex w-full items-center justify-between px-6 py-4 text-left font-display text-sm font-semibold text-slate-900"
+                    className="flex w-full items-center justify-between px-6 py-4 text-left text-sm font-semibold text-slate-900"
                   >
                     <span>{faq.q}</span>
                     <span className="ml-4 font-mono text-base text-slate-400">
@@ -520,14 +520,14 @@ export default function HomePage() {
         </section>
 
         {/* Bottom CTA Banner */}
-        <section className="mt-28 rounded-3xl border border-amber-200/80 bg-gradient-to-b from-amber-50/70 to-white p-8 sm:p-14 text-center shadow-xs">
-          <span className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-amber-800">
-            Get Organized Today
+        <section className="mt-28 rounded-3xl border border-slate-200 bg-white p-8 sm:p-14 text-center shadow-xs">
+          <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.25em] text-neutral-400">
+            GET ORGANIZED TODAY
           </span>
-          <h2 className="mt-3 font-display text-3xl sm:text-4xl font-semibold text-slate-900">
-            Never lose track of a job application again.
+          <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-[-0.03em] text-slate-950">
+            Never lose track of a job <span className="font-serif italic font-normal text-slate-800">opportunity</span> again.
           </h2>
-          <p className="mx-auto mt-4 max-w-lg text-sm text-slate-600 leading-relaxed">
+          <p className="mx-auto mt-4 max-w-lg text-sm text-slate-600 leading-relaxed font-normal">
             Connect your inbox in seconds. Your board configures itself automatically with zero manual entry.
           </p>
           <div className="mt-8 flex justify-center">
