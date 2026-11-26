@@ -3,6 +3,26 @@
     JobPilot AI
 </h1> 
 
+<p align="center">
+  <b>Smart Job Application Tracking Workspace with Groq AI Email Classification & Full-Screen Kanban Board</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-blue?logo=react&logoColor=white" alt="React 19" />
+  <img src="https://img.shields.io/badge/FastAPI-0.115+-009688?logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/TailwindCSS-v4-38B2AC?logo=tailwindcss&logoColor=white" alt="Tailwind CSS v4" />
+  <img src="https://img.shields.io/badge/Groq%20LPU-AI%20Reasoning-F55036" alt="Groq AI" />
+  <img src="https://img.shields.io/badge/Clerk-Authentication-6C47FF?logo=clerk&logoColor=white" alt="Clerk Auth" />
+</p>
+
+<p align="center">
+  <img src="./Home.png" alt="JobPilot AI Landing Page" width="100%" />
+</p>
+
+<p align="center">
+  <img src="./dashboard.png" alt="JobPilot AI Full-Screen Kanban Board" width="100%" />
+</p>
+
 JobPilot AI is a modern, full-screen job application tracking workspace that connects directly to your inbox. It parses incoming recruiter emails with high-speed Groq AI reasoning, automatically advances cards across your Kanban pipeline (*Applied*, *Screening*, *Interview*, *Offer*, *Rejected*), and provides one-click deep links directly into Gmail.
 
 ---
