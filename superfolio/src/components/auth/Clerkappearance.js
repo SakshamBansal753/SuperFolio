@@ -1,148 +1,110 @@
 export const clerkAppearance = {
   variables: {
-    colorPrimary: "#3B82F6",
-    colorBackground: "#141A24",
-    colorText: "#FFFFFF",
-    colorTextSecondary: "#94A3B8",
+    colorPrimary: "#D97706",
+    colorBackground: "#FFFFFF",
+    colorText: "#0F172A",
+    colorTextSecondary: "#64748B",
 
-    colorInputBackground: "#1E293B",
-    colorInputText: "#F8FAFC",
+    colorInputBackground: "#FFFFFF",
+    colorInputText: "#0F172A",
 
-    colorDanger: "#EF4444",
-    colorSuccess: "#22C55E",
-    colorWarning: "#F59E0B",
+    colorDanger: "#DC2626",
+    colorSuccess: "#16A34A",
+    colorWarning: "#D97706",
 
-    borderRadius: "12px",
-
+    borderRadius: "10px",
     fontFamily: "Inter, sans-serif",
   },
 
   elements: {
-
     card: `
-      bg-[#141A24]
-      border border-white/10
-      rounded-2xl
-      shadow-2xl
-      backdrop-blur-xl
+      bg-white
+      border border-slate-200
+      rounded-xl
+      shadow-sm
       p-8
       w-full
     `,
 
     rootBox: "w-full",
 
-    headerTitle:
-      "font-display text-3xl text-white font-semibold",
+    headerTitle: "font-display text-2xl text-slate-900 font-semibold",
 
-    headerSubtitle:
-      "text-white font-body",
+    headerSubtitle: "text-slate-500 font-body text-sm",
 
     socialButtonsBlockButton: `
-      bg-[#1E293B]
-      border border-slate-700
-      hover:bg-[#273548]
-      transition-all
-      duration-200
-      text-white
+      bg-white
+      border border-slate-200
+      hover:bg-slate-50
+      transition-colors
+      duration-150
+      text-slate-800
+      shadow-none
     `,
 
-    socialButtonsBlockButtonText:
-      "text-white font-medium",
+    socialButtonsBlockButtonText: "text-slate-800 font-medium text-sm",
 
     dividerRow: "my-6",
 
-    dividerLine: "bg-slate-700",
+    dividerLine: "bg-slate-200",
 
-    dividerText:
-      "text-white font-mono uppercase text-xs tracking-widest",
+    dividerText: "text-slate-400 font-mono uppercase text-[11px] tracking-wider",
 
-    formFieldLabel:
-      "text-white font-medium",
+    formFieldLabel: "text-slate-700 font-medium text-xs",
 
     formFieldInput: `
-      bg-[#1E293B]
+      bg-white
       border
-      border-slate-700
-      text-white
-      placeholder:text-slate-500
-      focus:border-blue-500
+      border-slate-300
+      text-slate-900
+      placeholder:text-slate-400
+      focus:border-amber-600
       focus:ring-2
-      focus:ring-blue-500/30
+      focus:ring-amber-500/20
+      rounded-lg
+      text-sm
       transition-all
     `,
 
     formButtonPrimary: `
-      bg-blue-600
-      hover:bg-blue-500
+      bg-amber-600
+      hover:bg-amber-700
       text-white
       font-medium
-      transition-all
-      shadow-lg
-      hover:shadow-blue-500/30
+      text-sm
+      transition-colors
+      shadow-none
+      rounded-lg
     `,
 
-    footerActionText:
-      "text-white",
+    footerActionText: "text-slate-500 text-sm",
 
-    footerActionLink:
-      "text-blue-400 hover:text-blue-300",
+    footerActionLink: "text-amber-700 hover:text-amber-800 font-medium",
 
-    identityPreviewText:
-      "text-white",
+    identityPreviewText: "text-slate-800 font-medium",
 
-    identityPreviewEditButton:
-      "text-blue-400 hover:text-blue-300",
+    identityPreviewEditButton: "text-amber-700 hover:text-amber-800 text-xs",
 
-    formFieldAction:
-      "text-blue-400 hover:text-blue-300",
+    formFieldAction: "text-amber-700 hover:text-amber-800 text-xs",
 
     otpCodeFieldInput: `
-      bg-[#1E293B]
+      bg-white
       border
-      border-slate-700
-      text-white
-      focus:border-blue-500
+      border-slate-300
+      text-slate-900
+      focus:border-amber-600
     `,
 
-    formResendCodeLink:
-      "text-blue-400 hover:text-blue-300",
+    formResendCodeLink: "text-amber-700 hover:text-amber-800 font-medium",
 
-    alertText:
-      "text-red-400",
+    alertText: "text-red-700 text-sm",
 
-    alert:
-      "bg-red-500/10 border border-red-500/30 rounded-lg",
+    alert: "bg-red-50 border border-red-200 rounded-lg p-3",
 
-    navbar:
-      "hidden",
+    navbar: "hidden",
 
-    footer:
-      "bg-transparent",
+    footer: "bg-transparent",
 
-    header:
-      "bg-transparent",
+    header: "bg-transparent",
   },
-  variables: {
-  colorPrimary: "#3B82F6",
-
-  colorBackground: "#141A24",
-
-  // All text white
-  colorText: "#FFFFFF",
-  colorTextOnPrimaryBackground: "#FFFFFF",
-  colorTextSecondary: "#FFFFFF",
-  colorTextDisabled: "#FFFFFF",
-
-  // Inputs
-  colorInputBackground: "#1E293B",
-  colorInputText: "#FFFFFF",
-
-  // Status colors
-  colorSuccess: "#22C55E",
-  colorDanger: "#EF4444",
-  colorWarning: "#F59E0B",
-
-  borderRadius: "12px",
-  fontFamily: "Inter, sans-serif",
-}
 };
