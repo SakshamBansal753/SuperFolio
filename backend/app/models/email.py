@@ -17,10 +17,7 @@ class Email(Base):
     )
     clerk_user_id: Mapped[str] = mapped_column(String, index=True, nullable=False)
 
-    # Nullable — an email might arrive before it's matched to a specific
-    # application (or never gets matched at all). SET NULL, not RESTRICT:
-    # deleting a card shouldn't be blocked by an email still referencing it,
-    # it should just become unlinked.
+
     application_id: Mapped[uuid.UUID | None] = mapped_column(
         UUID(as_uuid=True),
         ForeignKey("applications.id", ondelete="SET NULL"),
@@ -28,8 +25,6 @@ class Email(Base):
         nullable=True,
     )
 
-    # Gmail's own message id. Unique so re-syncing the inbox never creates
-    # duplicate rows for the same email.
     gmail_message_id: Mapped[str] = mapped_column(String(255), unique=True, nullable=False)
 
     sender: Mapped[str] = mapped_column(String(255), nullable=False)
@@ -40,6 +35,9 @@ class Email(Base):
     # Where the AI's generated reply lives, pending the user's review — never
     # sent automatically. Null until a reply's actually been generated.
     ai_reply_draft: Mapped[str | None] = mapped_column(Text, nullable=True)
+
+    # Job-application stage classified by AI (Applied, Screening, Interview, Offer, Rejected)
+    classification: Mapped[str | None] = mapped_column(String(50), nullable=True)
 
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), nullable=False

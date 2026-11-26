@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-// Illustrative feed — swap for a real "recent activity" query once the
-// dashboard has one. Kept local so the auth page has zero data dependency.
 const FEED = [
   { company: "Vercel", role: "Frontend Engineer", status: "Applied", time: "09:14" },
   { company: "Linear", role: "Product Engineer", status: "Screening", time: "09:41" },
@@ -14,10 +12,10 @@ const FEED = [
 ];
 
 const STATUS_STYLES = {
-  Applied: "text-mist border-mist/40",
-  Screening: "text-mist border-mist/40",
-  Interview: "text-amber border-amber/50",
-  Offer: "text-moss border-moss/50",
+  Applied: "text-slate-600 border-slate-200 bg-slate-50",
+  Screening: "text-blue-700 border-blue-200 bg-blue-50",
+  Interview: "text-amber-800 border-amber-200 bg-amber-50",
+  Offer: "text-emerald-700 border-emerald-200 bg-emerald-50",
 };
 
 export default function StatusTicker() {
@@ -43,16 +41,16 @@ export default function StatusTicker() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.03] px-4 py-3"
+            className="flex items-center justify-between rounded-lg border border-slate-200 bg-white px-4 py-3 shadow-xs"
           >
             <div className="flex flex-col">
-              <span className="font-body text-sm text-foreground/90">{item.role}</span>
-              <span className="font-mono text-xs text-mist">{item.company}</span>
+              <span className="font-body text-sm font-medium text-slate-800">{item.role}</span>
+              <span className="font-mono text-xs text-slate-500">{item.company}</span>
             </div>
             <div className="flex items-center gap-3">
-              <span className="font-mono text-[11px] text-mist/70">{item.time}</span>
+              <span className="font-mono text-[11px] text-slate-400">{item.time}</span>
               <span
-                className={`rounded-full border px-2 py-0.5 font-mono text-[10px] uppercase tracking-wide ${STATUS_STYLES[item.status]}`}
+                className={`rounded-full border px-2 py-0.5 font-mono text-[10px] font-medium uppercase tracking-wide ${STATUS_STYLES[item.status]}`}
               >
                 {item.status}
               </span>

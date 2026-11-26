@@ -36,6 +36,7 @@ class ApplicationCreate(BaseModel):
  
  
 class ApplicationUpdate(BaseModel):
+    column_id: uuid.UUID | None = None
     company: str | None = None
     role: str | None = None
     job_url: str | None = None
@@ -58,25 +59,33 @@ class Application(BaseModel):
     position: float
     company: str
     role: str
-    job_url: str | None
-    notes: str | None
-    source: str
-    applied_date: datetime | None
-    created_at: datetime
-    updated_at: datetime
+    job_url: str | None = None
+    notes: str | None = None
+    source: str = "manual"
+    applied_date: datetime | None = None
+    created_at: datetime | None = None
+    updated_at: datetime | None = None
+
+    # Embedded email details for instant zero-latency card rendering
+    email_id: uuid.UUID | None = None
+    gmail_message_id: str | None = None
+    email_sender: str | None = None
+    email_subject: str | None = None
+    email_body: str | None = None
 class EmailOut(BaseModel):
     model_config = ConfigDict(from_attributes=True)
  
     id: uuid.UUID
-    application_id: uuid.UUID | None
+    application_id: uuid.UUID | None = None
     gmail_message_id: str
     sender: str
     subject: str
     body: str
     received_at: datetime
-    ai_reply_draft: str | None
-    created_at: datetime
-    updated_at: datetime
+    ai_reply_draft: str | None = None
+    classification: str | None = None
+    created_at: datetime | None = None
+    updated_at: datetime | None = None
  
  
 class EmailLinkApplication(BaseModel):
